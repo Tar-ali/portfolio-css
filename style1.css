@@ -121,10 +121,10 @@ ul.icons li i:hover {
 
       .container {
         display: flex;
-        width: 400%;
+        width: 300%;
         padding: 4% 2%;
         box-sizing: border-box;
-        height: 100vh;
+        height: 50vh;
       }
 
       .box {
