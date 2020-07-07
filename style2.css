@@ -1,4 +1,18 @@
+/* body {
+  background-image: url(https://i.ytimg.com/vi/BJsvSh7ZUgc/maxresdefault.jpg);
+  background-position-x: center;
+  background-repeat: repeat-y;
+  background-size: 100%;
+  background-color: none;
+  height: 100%;
+  width: 100%;
+} */
+
+@import "https://fonts.googleapis.com/css?family=Permanent+Marker";
+html,
 body {
+  font-size: 14px;
+  font-family: "Permanent Marker", cursive;
   background-image: url(https://i.ytimg.com/vi/BJsvSh7ZUgc/maxresdefault.jpg);
   background-position-x: center;
   background-repeat: repeat-y;
@@ -8,29 +22,28 @@ body {
   width: 100%;
 }
 
-@import "https://fonts.googleapis.com/css?family=Permanent+Marker";
-html, body {
-  background: #ECD078;
-  color: #f9f1d7;
-  font-size: 1.1em;
-  font-family: 'Permanent Marker', cursive;
+a {
+  text-decoration: none;
 }
-
 .wrapper {
   position: relative;
-  width: 400px;
-  height: 300px;
-  margin: auto;
-  margin-top: 150px;
+  width: 240px;
+  height: 160px;
+
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 20vmax;
+  margin-bottom: 20vmin;
+  margin-left: 60px;
   perspective: 800px;
   perspective-origin: 10% -10%;
 }
 
 .bg {
-  width: 100%;
-  height: 100%;
+  width: 150px;
+  height: 166px;
   position: relative;
-  background: #53777A;
+  background: #dd6e58;
   border-radius: 5px;
   transform: rotateY(-10deg);
   box-shadow: 20px -5px 30px rgba(0, 0, 0, 0.4);
@@ -38,11 +51,11 @@ html, body {
 
 .content {
   position: absolute;
-  right: -40px;
+  right: -25px;
   top: 20px;
-  width: 350px;
-  height: 300px;
-  background: #dd6e58;
+  width: 90%;
+  height: 80%;
+  background: #53777a;
   border-radius: 50%;
   text-align: center;
   transform: perspective(800px) translateZ(20px);
@@ -61,7 +74,7 @@ div.btn-wrapper {
   left: -40px;
 }
 
-div.cube {
+/*div.cube {
   height: 90px;
   width: 180px;
   transform: rotateY(15deg);
@@ -78,7 +91,7 @@ div.cube .success {
   display: none;
 }
 div.cube .fail {
-  backgrond: #C02942;
+  background: #c02942;
   display: block;
 }
 div.cube.show-success .back {
@@ -92,7 +105,7 @@ div.cube.show-success .fail {
 }
 
 .cube-ani {
-  animation: press .5s ease, spin .35s ease .5s, show-top 1.5s ease .85s;
+  animation: press 0.5s ease, spin 0.35s ease 0.5s, show-top 1.5s ease 0.85s;
 }
 
 .spin {
@@ -101,8 +114,8 @@ div.cube.show-success .fail {
 
 .face {
   position: absolute;
-  height: 90px;
-  width: 90px;
+  height: 50%;
+  width: 50%;
   backface-visibility: true;
   background: #d5482e;
 }
@@ -110,14 +123,14 @@ div.cube.show-success .fail {
 .face.front {
   height: 90px;
   width: 180px !important;
-  background: #D95B43;
+  background: #d95b43;
   transform: translateZ(45px);
 }
 
 .face.back {
   height: 90px;
   width: 180px !important;
-  background: #C02942;
+  background: #c02942;
   transform: rotateX(-180deg) translateZ(45px);
 }
 
@@ -142,7 +155,7 @@ div.cube.show-success .fail {
   transform: rotateX(90deg) translateZ(45px);
 }
 
-.bottom {
+.bottomt {
   width: 180px;
   height: 90px;
   transform: rotateX(-90deg) translateZ(45px);
@@ -194,5 +207,59 @@ div.cube.show-success .fail {
   100% {
     transform: translateY(0px) rotateY(1099deg) scale3d(1, 1, 1);
   }
+} */
+
+.wrapper .button {
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+  color: #53777a;
+  width: 80px;
+  height: 50px;
+
+  border-radius: 30px;
+  text-shadow: 0px 5px hsla(219, 15%, 52%, 0.74),
+    0px 10px 10px rgba(228, 223, 223, 0.2);
+  box-shadow: 0px 0px 0px 15px hsl(27, 93%, 17%),
+    0px 10px 0px 15px hsl(27, 93%, 17%), 0px 20px 20px 15px #0003;
+  cursor: pointer;
+  border-radius: 100px 30px 100px 30px;
 }
 
+.button p {
+  margin-top: 20px;
+  transform: rotate(-3deg);
+}
+
+.button:hover {
+  animation: 0.8s morph ease infinite;
+}
+
+.button:hover p {
+  animation: 0.8s rot ease infinite;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 100px 30px 100px 30px;
+  }
+  50% {
+    border-radius: 30px 100px 30px 100px;
+  }
+  100% {
+    border-radius: 100px 30px 100px 30px;
+  }
+}
+
+@keyframes rot {
+  0% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
