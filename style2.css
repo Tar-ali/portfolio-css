@@ -1,4 +1,4 @@
-/* body {
+body {
   background-image: url(https://i.ytimg.com/vi/BJsvSh7ZUgc/maxresdefault.jpg);
   background-position-x: center;
   background-repeat: repeat-y;
@@ -6,9 +6,9 @@
   background-color: none;
   height: 100%;
   width: 100%;
-} */
+}
 
-@import "https://fonts.googleapis.com/css?family=Permanent+Marker";
+/* @import "https://fonts.googleapis.com/css?family=Permanent+Marker";
 html,
 body {
   font-size: 14px;
@@ -20,7 +20,7 @@ body {
   background-color: none;
   height: 100%;
   width: 100%;
-}
+} */
 
 a {
   text-decoration: none;
