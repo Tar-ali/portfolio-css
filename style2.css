@@ -8,6 +8,11 @@ body {
   width: 100%;
 }
 
+#portBody {
+  background-color: transparent;
+  border: none;
+}
+
 /* body {
   background-image: url("https://skywell.software/wp-content/uploads/2018/12/web-development-1024x605.jpg");
   background-position-x: center;
