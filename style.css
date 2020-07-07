@@ -1,20 +1,20 @@
-1- syntax tags | for example (<p> this is example </p>)
+class are used to gather multible css styles to gather | for example .Class
 
-2- comments | for example (<!-- this is example -->)
+-change the typle of the text | for example font:family: Arial
 
-3- headings |   for example (<h1> this is example <h1>,  <h2> this is example <h2> )
+-chnge the size of the font | for example font-size: 16px
 
-4- paragraphs | for example  (<p> this is example <p>)
+-change the background color | for example background:red
 
-5- inline Elements | for example  (<span> this is example <span>)
+-change the color of the text | for exapmle color:blue
 
-6- block Elements | for example  (<div> this is example <div>)
+-change the width | for example width:200px
 
-7- bolding the text |  | for example  (<strong> this is example <strong>)
+change the height | for example height:200px
 
-8- links |  | for example  ( <a href="https://www.google.com">Contacts</a> )
+-change the ditance between lines | for example line-height:20px
 
-9- tag attributes |  for example  (<p id="2001"> this is example <p>)
+-make a border | for example border:solid red 20px
 
-10- lists |  for example  (<li> item_1 <li>)
+-change the bidding | for example bidding 200px
 
