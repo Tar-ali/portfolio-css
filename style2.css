@@ -1,0 +1,9 @@
+body {
+  background-image: url(https://skywell.software/wp-content/uploads/2018/12/web-development-1024x605.jpg);
+  background-position-x: center;
+  background-repeat: repeat-y;
+  background-size: 100%;
+  background-color: none;
+  height: 100%;
+  width: 100%;
+}
