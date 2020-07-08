@@ -1,5 +1,5 @@
 body {
-  background-image: url(https://b.stripecdn.com/site-srv/assets/img/blog/posts/connect-frontend/header-background-grid-41d00e90a9df6e3a3b18a210d8f2b81667dec217.png);
+  background-image: url("https://b.stripecdn.com/site-srv/assets/img/blog/posts/connect-frontend/header-background-grid-41d00e90a9df6e3a3b18a210d8f2b81667dec217.png");
   background-position-x: center;
   background-repeat: repeat-y;
   background-size: 100%;
