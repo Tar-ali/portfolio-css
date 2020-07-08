@@ -8,6 +8,11 @@ body {
   width: 100%;
 }
 
+#portBody {
+  background-color: transparent;
+  border: none;
+}
+
 a {
   text-decoration: none;
 }
