@@ -246,7 +246,7 @@ article {
   --s: -1;
   display: flex;
   align-items: center;
-  height: calc(100vh/var(--n));
+/*   height: calc(100vh/var(--n)); */
   transform: translate(calc(var(--s)*50%));
 }
 article:nth-child(2n) {
