@@ -238,7 +238,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-/*   background: linear-gradient(currentColor, currentColor) 50%/2px repeat-y; */
+  background: linear-gradient() 50%/2px repeat-y; 
   color: #ddd;
 }
 
