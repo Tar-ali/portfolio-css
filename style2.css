@@ -246,17 +246,17 @@ article {
   --s: -1;
   display: flex;
   align-items: center;
-/*   height: calc(100vh/var(--n)); */
+  height: calc(100vh/var(--n));
   transform: translate(calc(var(--s)*50%));
 }
 article:nth-child(2n) {
   --s: 1;
 }
-article:nth-child(2n) img {
+/* article:nth-child(2n) img {
   --cpval: polygon(90.45085% 79.38926%, 34.54915% 97.55283%, 0% 50%, 34.54915% 2.44717%, 90.45085% 20.61074%);
   -webkit-clip-path: var(--cpval);
   clip-path: var(--cpval);
-}
+} */
 article:nth-child(2n) img:hover {
   --cpval: polygon(90.45085% 20.61074%, 90.45085% 79.38926%, 34.54915% 97.55283%, 0% 50%, 34.54915% 2.44717%);
   -webkit-clip-path: var(--cpval);
