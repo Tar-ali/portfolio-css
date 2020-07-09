@@ -12,8 +12,7 @@ body {
   gradient(currentColor, currentColor) 50%/2px repeat-y;
   color: #ddd;
 }
-  color: #ddd;
-}
+ 
 
 #portBody {
   background-color: transparent;
