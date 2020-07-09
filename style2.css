@@ -13,6 +13,30 @@ body {
   border: none;
 }
 
+#portNav {
+  background-color: black;
+  border: 5px solid white;
+  opacity: 0.6;
+  width: 100%;
+}
+
+#portNav ul li a {
+  color: white;
+}
+
+#portText h2 {
+  visibility: hidden;
+}
+
+#portHeader {
+  background-color: none;
+}
+
+#portFooter {
+  visibility: hidden;
+}
+
+
 a {
   text-decoration: none;
 }
