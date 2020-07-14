@@ -1,20 +1,63 @@
-class are used to gather multible css styles to gather | for example .Class
+ <?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$name = "PDB";
+$db = "CREATE DATABASE FIRST";
 
--change the typle of the text | for example font:family: Arial
 
--chnge the size of the font | for example font-size: 16px
+$conn = new mysqli($servername,$username,$password, 'first' );
 
--change the background color | for example background:red
+if($conn->connect_error){
+die("faild connection" . $conn->connect_error);
+}else 
+echo "succs log db <br>";
+// $conn->query("DROP DATABASE FIRST");
 
--change the color of the text | for exapmle color:blue
+// if($conn->query($db)===TRUE){
+// echo "created db <br> ";
+// }else {echo "didnot";}
 
--change the width | for example width:200px
+$sql = "CREATE TABLE PERSON (
+    pers_id INT(10) AUTO_INCREMENT PRIMARY KEY,
+    group1 VARCHAR(25) 
+)";
 
-change the height | for example height:200px
+// if($conn->query($sql)===TRUE){
+//     echo "create table";
+// }else echo "not created". $conn->error;
 
--change the ditance between lines | for example line-height:20px
+if($conn->query($sql)===TRUE){
+    echo "create table";
+}else echo "not created". $conn->error;
 
--make a border | for example border:solid red 20px
 
--change the bidding | for example bidding 200px
+$st = $conn->prepare("INSERT INTO person (pers_id, group1) VALUES(?, ?)");
+$st->bind_param("ss", $pers_id, $group1);
 
+// $st = $conn->prepare("INSERT INTO MyGuests (firstname, lastname, email) VALUES (?, ?, ?)");
+// $st->bind_param("sss", $firstname, $lastname, $email);
+
+
+$pers_id = "1093";
+$group1 = "ger";
+
+$st->execute();
+echo "succses";
+
+
+// $sql = "CREATE TABLE MyGuests (
+//     id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+//     firstname VARCHAR(30) NOT NULL,
+//     lastname VARCHAR(30) NOT NULL,
+//     email VARCHAR(50),
+//     reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+//     )";
+    
+//     if ($conn->query($sql) === TRUE) {
+//       echo "Table MyGuests created successfully";
+//     } else {
+//       echo "Error creating table: " . $conn->error;
+//     }
+    
+//     $conn->close();
